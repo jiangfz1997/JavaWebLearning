@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--组合选择器的格式是：
+        选择器1， 选择器2， 选择器n{
+            属性：值；
+        }
+        可以让多个选择器共用一个代码
+        -->
+    <style type="text/css">
+        .class01, #id01{
+            color: green;
+            font-size: 20px;
+        }
+        .class02, span{
+            color: red;
+            font-size: 40px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="class01">tag1</div> <!--选择想使用的class-->
+    <div class="class02">tag2</div>
+    <span id="id01">tag3</span>
+    <span>tag4</span>
+</body>
+</html>

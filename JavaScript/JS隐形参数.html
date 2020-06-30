@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function func(){
+            alert(arguments.length);
+            alert(arguments[1]);
+            alert("无参函数func");
+        }
+
+        func(1,"aaa");    //直接在无参函数func内填入参数
+
+        //任意数相加hh
+       function sum(){
+            var a = 0;
+            for(var i = 0; i < arguments.length; i++){
+                a+=arguments[i];
+            }
+            return a;
+        }
+        alert(sum(1,2,3,4,5))
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var arr = [];
+        alert(arr.length);    // 0
+
+        arr[0] = 12;
+        alert(arr[0]);
+        alert(arr.length);    // 1, js的数组可以发生变化
+        arr[2] = "abc";
+        alert(arr.length);    // 2
+        alert(arr[1]);        //undefined
+
+        //遍历
+        for(var i = 0; i < arr.length; i++){
+            alert(arr[i]);
+        }
+
+        //赋初值
+        var arr2 = [a, b, "34", 12, true];
+    </script>
+</head>
+<body>
+
+</body>
+</html>

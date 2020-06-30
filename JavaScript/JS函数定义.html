@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function func() {
+            alert("无参func()被调用");
+        }
+        func();
+
+        function func2(a, b){    //参数不需要加参数类型
+            alert("有参函数func2， a=" + a);
+        }
+        func2(1,2);
+
+        function func3(a, b){    //直接写return返回值
+            var result = a + b;
+            return result;
+        }
+        alert(func3(1,2));
+
+
+        //第二种定义方式
+        var func4 = function(){
+            alert("第二种无参");
+        }
+        var func5 = function(a,b){
+            return a+b;
+        }
+
+        function func7(a,b){
+            alert("有参");
+        }
+        function func7(){
+            alert("无参");
+        }
+        func7(2,3);    //显示无参
+    </script>
+</head>
+<body>
+
+</body>
+</html>

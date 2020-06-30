@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+       /*用户点击按钮时，要获取输出框中的内容，验证其是否合法
+       * 必须由字母，数字，下划线，长度5-12
+       * */
+        function func() {
+            // 1.获取标签
+            var usernameObj = document.getElementById("username");
+            alert(usernameObj);   //{object HTMLInputElement} 是dom对象
+            var usernameText = usernameObj.value;
+            var patt = /^\w{5,12}$/    // 正则表达式
+            /*
+            * test()用于测试某个字符串是否符合规则，返回true/false
+            * */
+            if(patt.test(usernameText)){
+                alert("用户名合法！");
+            }else{
+                alert("用户名不合法！");
+            }
+        }
+    </script>
+</head>
+<body>
+    用户名：<input type="text" id="username" value=""/>
+    <button onclick="func()">校验</button>
+
+</body>
+</html>

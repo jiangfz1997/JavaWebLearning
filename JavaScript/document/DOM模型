@@ -1,0 +1,13 @@
+DOM全称是 Document Object Model 文档对象模型： 把文档中的标签，属性，文本转化为对象管理
+
+Document对象：把html代码转化为Document文档树
+    1.Document管理了所有的HTML文档内容
+    2.document是树形结构文档，有层级关系
+    3.把所有的标签对象化
+    4.可以通过document访问所有的标签对象
+
+对象方法介绍：
+    getElementById(elementId): 通过标签的id属性查找标签dom对象， element是标签的id属性
+    getElementByName(elementName): 通过标签的name属性查找标签dom对象， element是标签的name属性
+    getElementByTagName(tagname): 通过标签名属性查找标签dom对象， element是标签名
+    createElement(tagName): 通过给定的标签名，创建一个标签对象，tagName是要创建的标签名

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function onchangeFunc() {    //静态
+            alert("她只剩下吉他了");
+        }
+
+        window.onload = function () {
+            var tag = document.getElementById("hina");
+            alert(typeof(tag));
+            tag.onchange = function func(){
+                   alert("姐妹万岁");
+            }
+        }
+    </script>
+</head>
+<body>
+    选择冰川纱夜的女朋友：
+    <!--静态注册onchange事件-->
+    <select onchange="onchangeFunc()">
+        <option>--我--</option>
+        <option>--hina--</option>
+        <option>--tsugu--</option>
+        <option>--lisa--</option>
+    </select>
+
+    选择冰川纱夜的女朋友：
+    <!--静态注册onchange事件-->
+    <select id="hina" >
+        <option>--我--</option>
+        <option >--hina--</option>
+        <option>--tsugu--</option>
+        <option>--lisa--</option>
+    </select>
+</body>
+</html>

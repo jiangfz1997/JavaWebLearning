@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var a = new Object();    //新建Object
+        alert(typeof(a));
+        a.name = "mfk";    //定义属性
+        a.age = 18;
+        a.func = function(){    //定义函数
+            alert(this.name +" "+ this.age)
+        }
+        a.func();
+
+        //{}形式定义
+        var obj = {
+            name:"aaa",    //属性之间需要由,分开
+            age: 18,
+            func(){
+                alert("aaa"+this.age);
+            }
+        };
+        alert(typeof(obj) + obj.name+ obj.func());
+    </script>
+</head>
+<body>
+
+</body>
+</html>

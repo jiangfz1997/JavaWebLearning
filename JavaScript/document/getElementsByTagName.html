@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        // 按照指定标签名进行查询并返回集合
+        //集合中都是Dom对象，顺序与html相同
+        var input = document.getElementsByTagName("input");
+
+        for(var i = 0; i < input.length; i++){
+            input[i].checked = true;
+        }
+    </script>
+</head>
+<body>
+    <input type="checkbox"  value="cpp"> c++
+    <input type="checkbox"  value="java"> java
+    <br/>
+    <button onclick="checkAll()">全选</button>
+    <button onclick="checkNo()">全部取消</button>
+    <button onclick="checkReverse()">反选</button>
+</body>
+</html>

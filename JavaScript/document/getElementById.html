@@ -16,16 +16,27 @@
             /*
             * test()用于测试某个字符串是否符合规则，返回true/false
             * */
+            var usernameSpan = document.getElementById("usernamespan")
+            /*
+            * innerHTML 表示起始标签和结束标签中的内容
+            * innerHTML 这个属性可读，可写
+            * */
+
             if(patt.test(usernameText)){
-                alert("用户名合法！");
+                //usernameSpan.innerHTML = "用户合法";
+                usernameSpan.innerHTML = " <img src=\"test.jpg\" width=\"30\" height=\"50\">";
             }else{
-                alert("用户名不合法！");
+                usernameSpan.innerHTML = "用户不合法";
             }
         }
     </script>
 </head>
 <body>
     用户名：<input type="text" id="username" value=""/>
+    <span id="usernamespan" >
+        <!--使用图片来指示-->
+        <img src="test.jpg" width="30" height="50">
+    </span>
     <button onclick="func()">校验</button>
 
 </body>

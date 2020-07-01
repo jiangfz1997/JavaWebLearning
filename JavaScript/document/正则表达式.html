@@ -3,6 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script type="text/javascript">
+        //var patt = new RegExp("e");    // 表示要求字符串中需要包含字母e
+        //alert(patt);    // 输出/e/
+
+        var patt = /e/;
+        var patt2 = /[abc]/;    //表示字符串中是否包含字母a或b或c
+        var patt3 = /[a-z]/;    //字符串是否包含小写字母
+
+        //元字符用于查找单词字符
+        var patt4 = /\w/;  //数字字母下划线
+
+        //量词：
+        //字符串至少有一个a
+        var patt5 = /a+/;
+
+        /*字符串包含零个或多个a：a*
+         *字符串包含零个或一个a：a？
+         *字符串包含连续三个a：/a{3}/
+         *字符串包含a个数{3，5}：/a{3，5}/
+         *字符串必须a结尾：/a$/
+         *字符串必须a开头：/^a/
+         *字符串必须完全匹配/^a{3,5}$/
+         * **/
+   </script>
 </head>
 <body>
 

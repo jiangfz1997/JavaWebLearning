@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--上面是xml文件的声明-->
+
+<books>
+    <book sn="SN123412123412">
+        <name>时间简史</name>
+        <author>霍金</author>
+        <price>75</price>
+    </book>
+    <book sn="SN341234123412">
+        <name>冰川纱夜的后宫生活</name>
+        <author>凑有希娜</author>
+        <price>34</price>
+    </book>
+</books>

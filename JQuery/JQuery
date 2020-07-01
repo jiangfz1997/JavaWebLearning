@@ -1,0 +1,15 @@
+JQuery对象：
+    1.JQuery的API创建的对象
+    2.JQuery包装的DOM对象
+    3.JQuery提供API查询得到的对象也是JQuery对象
+
+JQuery对象的本质：
+    Dom对象的数组
+
+JQuery对象和DOM对象的区别：不能使用对方的属性和方法
+
+Dom对象和jQuery对象互转：
+    1. dom -》 jQuery： var $obj = $(Dom对象);
+    2. jQuery -》 Dom： var dom = $obj[下标]
+
+jQuery选择器

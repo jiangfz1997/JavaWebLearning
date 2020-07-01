@@ -1,5 +1,14 @@
 DOM全称是 Document Object Model 文档对象模型： 把文档中的标签，属性，文本转化为对象管理
 
+相当于：
+class Dom{
+    private String id;
+    private String tagName;
+    private Dom parentNode;    // 父亲
+    private List<Dom> children;    // 孩子节点
+    private String innerHTML;    // 起始标签和结束标签中间的内容
+}
+
 Document对象：把html代码转化为Document文档树
     1.Document管理了所有的HTML文档内容
     2.document是树形结构文档，有层级关系
@@ -8,6 +17,28 @@ Document对象：把html代码转化为Document文档树
 
 对象方法介绍：
     getElementById(elementId): 通过标签的id属性查找标签dom对象， element是标签的id属性
-    getElementByName(elementName): 通过标签的name属性查找标签dom对象， element是标签的name属性
+    getElementsByName(elementName): 通过标签的name属性查找标签dom对象， element是标签的name属性, 返回多个
     getElementByTagName(tagname): 通过标签名属性查找标签dom对象， element是标签名
     createElement(tagName): 通过给定的标签名，创建一个标签对象，tagName是要创建的标签名
+
+注： 三个查询方法，若有id属性则优先使用getElementById
+    没有id则用ByName
+    若均没有再按TagName查询
+
+    以上三个方法必须在页面加载完成后才能查询到
+
+节点的常用属性和方法：
+    节点就是标签对象
+
+方法：getElementByTagName(): 获取当前节点的指定标签名孩子节点
+     appendChild(oChildNode): 添加一个子节点
+属性：childNodes: 获取当前节点的所有子节点
+     firstChild: 获取当前节点的第一个子节点
+     lastChild： 最后一个子节点
+     parentNode： 当前节点的父节点
+     nextSibling: 获取当前节点的下一节点
+     previousSibling：当前节点的上一个节点
+     className： 获取/设置class属性
+     InnerHTML: 获取/设置起始标签和结束标签中内容
+     InnerText： 起始标签和结束标签的文本
+

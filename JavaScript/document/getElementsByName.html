@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function checkAll() {
+           var hobby =  document.getElementsByName("hobby");    //hobby返回一个多个对象集合
+            //checked表示复选框的选中状态，可读可写
+
+            for(var i = 0; i < hobby.length; i++){
+                hobby[i].checked = true;
+            }
+        }
+        function checkNo() {
+            var hobby =  document.getElementsByName("hobby");    //hobby返回一个多个对象集合
+            //checked表示复选框的选中状态，可读可写
+            for(var i = 0; i < hobby.length; i++){
+                hobby[i].checked = false;
+            }
+        }
+        function checkReverse() {
+            var hobby =  document.getElementsByName("hobby");    //hobby返回一个多个对象集合
+            //checked表示复选框的选中状态，可读可写
+            for(var i = 0; i < hobby.length; i++){
+                hobby[i].checked = !hobby[i].checked;
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="checkbox" name="hobby" value="cpp"> c++
+    <input type="checkbox" name="hobby" value="java"> java
+    <br/>
+    <button onclick="checkAll()">全选</button>
+    <button onclick="checkNo()">全部取消</button>
+    <button onclick="checkReverse()">反选</button>
+</body>
+</html>
